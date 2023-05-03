@@ -3,8 +3,6 @@ import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
 import ExpenseForm from "./components/ExpenseForm";
 
-export const categories = ["Groceries", "Utilites", "Entertaintment"];
-
 export default function App() {
   const [expenses, setExpenses] = useState([
     { id: 1, description: "milk", amount: 2, category: "Utilites" },
@@ -24,6 +22,7 @@ export default function App() {
         <ExpenseForm />
       </div>
       <div className="mb-3">
+        Filter By Category
         <ExpenseFilter
           onSelectCategory={(category) => setSelectedCategory(category)}
         />
