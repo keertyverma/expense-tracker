@@ -18,6 +18,7 @@ export default function App() {
 
   return (
     <>
+      <h1 className="mb-5">Expense Tracker</h1>
       <div className="mb-5">
         <ExpenseForm
           onSubmit={(newExpense) =>
